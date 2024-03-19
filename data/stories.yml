@@ -1,0 +1,296 @@
+version: "3.1.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: asking about tuition fees international
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: tuition_fees
+    - action: utter_ask_european_or_not
+    - intent: deny
+    - action: utter_pay
+
+- story: asking about tuition fees european
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: tuition_fees
+    - action: utter_ask_european_or_not
+    - intent: affirm
+    - action: utter_no_fees
+
+- story: enquiring career service
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: career_service
+    - action: utter_career_service
+
+
+- story: available courses
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: available_courses
+    - action: utter_available_courses
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_happy
+
+- story: admission decision
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: admission_decisions
+    - action: utter_admission_decisions
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: university website
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: link_uni_website
+    - action: utter_uni_website
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: event dates
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: event_dates
+    - action: action_event_dates
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about admission requirements
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: admission_requirements
+    - action: utter_admission_requirements
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about the application process
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: application_process
+    - action: utter_application_process
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about the application
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: career_service
+    - action: utter_career_service
+    - intent: event_dates
+    - action: utter_event_dates
+    - intent: link_uni_website
+    - action: utter_uni_website
+    - intent: admission_decisions
+    - action: utter_admission_decisions
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: bachelor study
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: bachelor_study
+    - action: action_bachelor_study
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: bachelor study
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: bachelor_study_AI
+    - action: utter_bachelor_study_AI
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: master study
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: master_study
+    - action: action_master_study
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: master study Business Information
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: master_study_hsb
+    - action: utter_master_study_hsb
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: double degree
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: double_degree
+    - action: utter_double_degree
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: double degree france
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: double_degree_france
+    - action: utter_double_degree_france
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: scholarship application
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: scholarship
+    - action: utter_fallback
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Summer School
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: summer_school
+    - action: action_summer_school
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: contact
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: contact
+    - action: utter_contact

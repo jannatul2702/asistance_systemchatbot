@@ -1,0 +1,378 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thank youGood
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - happy
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: tuition_fees
+  examples: |
+    - tuition fees
+    - Is there any tuition fees?
+    - Is there any tuition fees at DIT?
+
+- intent: career_service
+  examples: |
+    - How do I contact career service?
+    - Contact information of career service?
+    - Email of career service?
+    - career service ?
+    - career service information ?
+    - career service info ?
+    - Does DIT have a career service?
+
+- intent: available_courses
+  examples: |
+    - Which courses are available?
+    - What subjects can I study?
+    - What studies does the university offer?
+    - What are the recommended courses?
+    - What can I study here?
+    - Courses option for me?
+    - courses ?
+    - What courses are available ?
+
+- intent: available_languages
+  examples: |
+    - What are the available languages?
+    - What are the different languages available?
+    - What are the language courses?
+    - Is there any language course catalog?
+    - What foreign languages can I find?
+    - What languages can I study here?
+    - available languages ?
+    - language options ?
+
+- intent: admission_decisions
+  examples: |
+    - When are the admission decisions sent out?
+    - When will I find out if I am accepted or rejected?
+    - What is the timeline for admission decisions?
+    - When is the decision of admission made?
+    - Can I know my admission decision status?
+    - admission decision ?
+
+- intent: link_uni_website
+  examples: |
+    - What is the link to our university website?
+    - Can I have the link to our university?
+    - How can I reach the university website?
+    - Where can I find the university website?
+    - Does the university website exist?
+    - Steps to reach the university website?
+    - uni website ?
+    - Where can I find the uni website?
+    - Does the uni website exist?
+
+- intent: event_dates
+  examples: |
+    - Are there any events in the university?
+    - When are the events being organized?
+    - What is the schedule of events?
+    - What is the timeline of the events?
+    - May I know if there are any events coming soon?
+    - events ?
+    - event dates ?
+    - Is there any open days events?
+
+- intent: admission_requirements
+  examples: |
+    - What are the admission requirements?
+    - What do I need to apply for admission?
+    - What are the prerequisites for admission?
+    - What documents do I need for admission?
+    - admission requirements ?
+    - admission criteria ?
+    - eligibility criteria ?
+
+- intent: application_process
+  examples: |
+    - How do I apply for admission?
+    - What is the application process?
+    - What are the steps to apply for admission?
+    - Where can I find the application form?
+    - application process ?
+    - application form ?
+    - how to apply for admission ?
+
+- intent: bachelor_study
+  examples: |
+    - Information about bachelor courses.
+    - What course are offered in bachelors?
+    - I would like to know about the available courses in Bachelors at THD.
+    
+- intent: bachelor_study_AI
+  examples: |
+    - I want to know about bachelor of Artificial Intelligence.
+    - What are the core subjects taught in a Bachelor of Artificial Intelligence program?
+    - Which universities are considered the best for pursuing a Bachelor of Artificial Intelligence?
+    - What are the career prospects after completing a Bachelor of Artificial Intelligence?
+
+- intent: bachelor_study_bpp
+  examples: |
+    - I want to know about a Bachelor of Building Products and Process.
+    - What are the core subjects taught in a Bachelor of Building Products and Process program?
+    - Which universities are considered the best for pursuing a Bachelor of Building Products and Process?
+    - What are the career prospects after completing a Bachelor of Building Products and Process?
+
+- intent: bachelor_study_ese
+  examples: |
+    - What are the core subjects taught in a Bachelor of Energy Systems Engineering program?
+    - Which universities are considered the best for pursuing a Bachelor of Energy Systems Engineering?
+    - What are the career prospects after completing a Bachelor of Energy Systems Engineering?
+
+- intent: bachelor_study_emi
+  examples: |
+    - I want to know about a Bachelor of Electromobility.
+    - What are the core subjects taught in a Bachelor of Electromobility program?
+    - Which universities are considered the best for pursuing a Bachelor of Electromobility?
+    - What are the career prospects after completing a Bachelor of Electromobility?
+
+- intent: bachelor_study_hi
+  examples: |
+    - I want to know about a Bachelor of Health Information.
+    - What are the core subjects taught in a Bachelor of Health Information program?
+    - Which universities are considered the best for pursuing a Bachelor of Health Information?
+    - What are the career prospects after completing a Bachelor of Health
+
+- intent: bachelor_study_ie
+  examples: |
+    - I want to know about a Bachelor of Industrial Engineering.
+    - What are the core subjects taught in a Bachelor of Industrial Engineering program?
+    - Which universities are considered the best for pursuing a Bachelor of Industrial Engineering?
+    - What are the career prospects after completing a Bachelor of Industrial Engineering?
+
+- intent: bachelor_study_itm
+  examples: |
+    - I want to know about a Bachelor of International Management.
+    - What are the core subjects taught in a Bachelor of International Management program?
+    - Which universities are considered the best for pursuing a Bachelor of International Management?
+    - What are the career prospects after completing a Bachelor of International Management?
+
+- intent: bachelor_study_im
+  examples: |
+    - I want to know about a Bachelor of International Tourism Management.
+    - What are the core subjects taught in a Bachelor of International Tourism Management program?
+    - Which universities are considered the best for pursuing a Bachelor of International Tourism Management?
+    - What are the career prospects after completing a Bachelor of International Tourism Management?
+
+- intent: master_study
+  examples: |
+    - Information about masters courses.
+    - What course are offered in masters?
+    - I would like to know about the available courses in masters at THD.
+
+- intent: master_study_ais
+  examples: |
+    - I want to know about a Master of Applied Computer Science.
+    - What are the core subjects taught in a Master of Applied Computer Science program?
+    - Which universities are considered the best for pursuing a Master of Applied Computer Science?
+    - What are the career prospects after completing a Master of Applied Computer Science?
+
+- intent: master_study_aid
+  examples: |
+    - I want to know about a Master of Artificial Intelligence.
+    - What are the core subjects taught in a Master of Artificial Intelligence program?
+    - Which universities are considered the best for pursuing a Master of Artificial Intelligence?
+    - What are the career prospects after completing a Master of Artificial Intelligence?
+
+- intent: master_study_dh
+  examples: |
+    - I want to know about a Master of Digital Health.
+    - What are the core subjects taught in a Master of Digital Health program?
+    - Which universities are considered the best for pursuing a Master of Digital Health?
+    - What are the career prospects after completing a Master of Digital Health?
+
+- intent: master_study_et
+  examples: |
+    - I want to know about a Master of Electrical Engineering and Information Technology.
+    - What are the core subjects taught in a Master of Electrical Engineering and Information Technology program?
+    - Which universities are considered the best for pursuing a Master of Electrical Engineering and Information Technology?
+    - What are the career prospects after completing a Master of Electrical Engineering and Information Technology?
+
+- intent: master_study_hsb
+  examples: |
+    - I want to know about a Master of Healthy and Sustainable Building.
+    - What are the core subjects taught in a Master of Healthy and Sustainable Building program?
+    - Which universities are considered the best for pursuing a Master of Healthy and Sustainable Building?
+    - What are the career prospects after completing a Master of Healthy and Sustainable Building?
+
+- intent: master_study_itd
+  examples: |
+    - I want to know about a Master of International Tourism Development.
+    - What are the core subjects taught in a Master of International Tourism Development program?
+    - Which universities are considered the best for pursuing a Master of International Tourism Development?
+    - What are the career prospects after completing a Master of International Tourism Development?
+
+- intent: master_study_mcs
+  examples: |
+    - I want to know about a Master of Mechatronics and Cyber-Physical Systems.
+    - What are the core subjects taught in a Master of Mechatronics and Cyber-Physical Systems program?
+    - Which universities are considered the best for pursuing a Master of Mechatronics and Cyber-Physical Systems?
+    - What are the career prospects after completing a Master of Mechatronics and Cyber-Physical Systems?
+
+- intent: double_degree
+  examples: |
+    - Information about double degree.
+    - What course are offered in double degree bachelors?
+    - I would like to know about the available courses in double degree at THD.
+
+- intent: double_degree_australia
+  examples: |
+    - double degree in australia
+    - I would like to know the available double degree programs in australia
+    - Name of bachelor and masters courses in australia.
+
+- intent: double_degree_brazil
+  examples: |
+    - double degree in brazil
+    - I would like to know the available double degree programs in brazil
+    - Name of bachelor and masters courses in brazil.
+
+- intent: double_degree_finland
+  examples: |
+    - double degree in finland
+    - I would like to know the available double degree programs in finland
+    - Name of bachelor and masters courses in finland.
+
+- intent: double_degree_france
+  examples: |
+    - double degree in france
+    - I would like to know the available double degree programs in france
+    - Name of bachelor and masters courses in france.
+
+- intent: double_degree_mexico
+  examples: |
+    - double degree in mexico
+    - I would like to know the available double degree programs in mexico
+    - Name of bachelor and masters courses in mexico.
+
+- intent: double_degree_new_zealand
+  examples: |
+    - double degree in new zealand
+    - I would like to know the available double degree programs in new zealand
+    - Name of bachelor and masters courses in new zealand.
+
+- intent: double_degree_austria
+  examples: |
+    - double degree in austria
+    - I would like to know the available double degree programs in austria
+    - Name of bachelor and masters courses in austria.
+
+- intent: double_degree_czech_republic
+  examples: |
+    - double degree in czech republic
+    - I would like to know the available double degree programs in czech republic
+    - Name of bachelor and masters courses in czech republic.
+
+- intent: summer_school
+  examples: |
+    - summer school?
+    - info on summer school?
+    - How can I apply for summer school?
+    - Tell me about the summer school program.
+
+- intent: scholarship
+  examples: |
+    - I want to know how to apply for a scholarship.
+    - scholarship
+    - How can I apply for scholarship?
+
+- intent: contact
+  examples: |
+    - contact?
+    - contact form?
+    - contact international office?
+    - international office?
+    - How can I contact the international office?
+    - I need contact details for further information.
+    - Who should I talk to for more details?
+

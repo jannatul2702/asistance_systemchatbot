@@ -1,0 +1,303 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - career_service
+  - available_courses
+  - available_languages
+  - admission_decisions
+  - link_uni_website
+  - event_dates
+  - admission_requirements
+  - application_process
+  - scholarship
+  - tuition_fees
+  - contact
+  - summer_school
+  - double_degree
+  - double_degree_czech_republic
+  - double_degree_austria
+  - double_degree_new_zealand
+  - double_degree_mexico
+  - double_degree_france
+  - double_degree_finland
+  - double_degree_brazil
+  - double_degree_australia
+  - master_study
+  - master_study_itd
+  - master_study_mcs
+  - master_study_hsb
+  - master_study_et
+  - master_study_dh
+  - master_study_aid
+  - master_study_ais
+  - bachelor_study
+  - bachelor_study_im
+  - bachelor_study_itm
+  - bachelor_study_ie
+  - bachelor_study_hi
+  - bachelor_study_emi
+  - bachelor_study_ese
+  - bachelor_study_bpp
+  - bachelor_study_AI
+
+responses:
+
+  utter_deny:
+    - text: "Ok! bye."
+
+  utter_greet:
+    - text: "Hey! My name is ADAS, I am your personal information assistant. How are you and How can I assist you with admission-related questions for the TECHNISCHE HOCHSCHULE DEGGENDORF?"
+
+  utter_did_that_help:
+    - text: "Apply to DIT and change your life! You will be even more than happy once you join us at DIT, the most international university in whole bavaria!"
+
+  utter_happy:
+    - text: "OK! How can I assist you with admission-related queries?"
+
+  utter_goodbye:
+    - text: "Bye! It was nice to meet you. If you have any more questions about admissions to the TECHNISCHE HOCHSCHULE DEGGENDORF, feel free to ask. Good luck with your application!"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_event_dates:
+    - text: "Halloween: 29th October,New Year Party: 31st December,Valentines Day: 14th February,Jesus Birthday: 31st February,World AIDS day: 1st December,Diwali Festival: 21st October,Campus Party: 3rd October,Christmas Party: 25th December"
+
+  utter_fallback:
+    - text: "I'm sorry, I couldn't find the information.You might find what you need on our website (https://www.th-deg.de/en) or by reaching out to our support team ( welcome@th-deg.de or +4999136158228). 
+    If you have a more specific question or need assistance with something else, feel free to ask."
+
+  utter_career_service:
+    - text: "Please use this email to contact the career service: stefanie.moeginger@th-deg.de"
+
+  utter_admission_decisions:
+    - text: "The admission decisions for winter semester will release on 27th August, and for summer semester, they will be released on 17th January."
+
+  utter_available_courses:
+    - text: "To find more about the courses offered at the TECHNISCHE HOCHSCHULE DEGGENDORF, please visit: https://www.th-deg.de/study-programmes"
+
+  utter_uni_website:
+    - text: "The official website of the TECHNISCHE HOCHSCHULE DEGGENDORF is: https://www.th-deg.de"
+
+  utter_asking_everything_ok:
+    - text: "Do you need any more assistance? If you have further questions about admission to the TECHNISCHE HOCHSCHULE DEGGENDORF, feel free to ask. Otherwise, goodbye and best of luck with your application!"
+
+  utter_chinese:
+    - text: "If you are a Chinese national interested in studying at DIT. SAT & TOFEL are compulsory for the admission."
+
+  utter_ask_european_or_not:
+    - text: "Are you European?"
+
+  utter_pay:
+    - text: "In accordance with the DIT's fee regulations (currently only available in German),each semester you need to pay a student service fee of 72€  + additional administration and support fees of 500€ that will be charged to international students starting from the winter semester 2024/2025"
+
+  utter_no_fees:
+    - text: "As European you just need to pay a student service fee of 72€ per semester"
+
+  utter_admission_requirements:
+    - text: "this depends on each case and on each study programme. Please send an email to welcome@th-deg.de  "
+
+  utter_application_process:
+    - text: "this depends on each applicant case and on each study programme. Please send an email to welcome@th-deg.de  "
+
+  utter_bachelor_study:
+    - text: "Bachelor courses are in areas of Technology and Engineering, Healthcare, Business and Economics and Computer Science.
+    If you are not sure which bachelor's degree is right for you, if you are a German or other EU citizen you could take the opportunity to use 1 - 2 semesters completing Orientation Studies to find out which degree programme would be your final selection.
+    The 1st semester of studies for the following courses can only be started in October, the winter semester."
+
+  utter_bachelor_study_AI:
+    - text: "The fascinating world of AI involves programming computer-controlled machines to independently make decisions and perform tasks usually conducted by humans.
+    Degree: Bachelor of Science (B.Sc.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_bpp:
+    - text: "To be at the forefront of challenges in the construction industry, we train students to be engineers with a focus on the development of construction products and construction.
+    Degree: Bachelor of Engineering (B.Eng.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_ese:
+    - text: "We humans take it for granted that we will always have access to energy. At any time, in unlimited quantities and almost anywhere. The future of our energy supply lies in renewable energies such as wind power, geothermal energy or solar energy.
+    Degree: Bachelor of Engineering (B.Eng.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_emi:
+    - text: "Electromobility, Autonomous Driving and Mobile Robotics - International is aimed at you as an international prospective student, as in the first three semesters you will receive German language courses as part of the curriculum in addition to technical training in English.
+    Degree: Bachelor of Engineering (B.Eng.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_hi:
+    - text: "The english degree course Health Informatics educates students to become computer scientists in the health industry. Informatics-based, medical, scientific and technical knowledge in healthcare and in the healthcare industry are influential in management. 
+    Degree: Bachelor of Science (B.Sc.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_ie:
+    - text: "Those who are interested in a career in the field of energy and resource efficiency will soon become aware that both a sound technical and economic knowledgebase is necessary.  
+    Degree: Bachelor of Engineering (B.Eng.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_itm:
+    - text: "The specifics of business and tourism, key qualifications, implementation skills and innovative ability are developed.    
+    Degree: Bachelor of Arts (B.A.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_bachelor_study_im:
+    - text: "If you are looking for a fully accredited business degree that integrates high academic standards with international experience, then we have a program designed specifically to meet your needs.   
+    Degree: Bachelor of Arts (B.A.)
+    Duration: 7 semesters (3.5 years)"
+
+  utter_master_study:
+    - text: "Bachelor courses are in areas of Technology and Engineering, Health, Business and Economics and Computer Science.
+    If you are not sure which master's degree is right for you, if you are a German or other EU citizen you could take the opportunity to use 1 - 2 semesters completing Orientation Studies to find out which degree programme would be your final selection.
+    The 1st semester of studies for the following courses can only be started in March, the summer semester."
+
+  utter_master_study_ais:
+    - text: "The vast majority of the electronics with hardware and software developed worldwide today is not in computers such as PCs or tablets, but in so-called embedded systems.
+    Degree: Master of Science (M.Sc.)
+    Duration: 3 semesters (18 months)"
+
+  utter_master_study_aid:
+    - text: "Just as electricity brought about far-reaching changes over 100 years ago, artificial intelligence (AI) has fundamentally started to change our lives.
+    Degree: Master of Science (M.Sc.)
+    Duration: 3 semesters (18 months)"
+
+  utter_master_study_dh:
+    - text: "Information and communication technologies (ICT) are rapidly changing the way medicine and healthcare are practiced, researched, studied, and taught.
+    Degree: Master of Science (M.Sc.)
+    Duration: 3 semesters or 18mths of full-time, full-presence / blended-learning to a total of 90 ECTS credits"
+
+  utter_master_study_et:
+    - text: "The aim of the Master's programme is thus to enable graduates of a diploma or bachelor's programme to support the knowledge gained to date with further theoretical knowledge in order to meet the requirements of modern development tasks, particularly in high-tech areas, in a special way. 
+    Degree: Master of Science (M.Sc.)
+    Duration: 3 semesters"
+
+  utter_master_study_hsb:
+    - text: "This postgraduate course qualifies students in methods and technologies in the fields of healthy and sustainable buildings, combined with applications in various areas of the construction and real estate industries. 
+    Degree:  Master of Engineering (M.Eng.)
+    Duration: 3 semesters"
+
+  utter_master_study_itd:
+    - text: "International tourism generates billions of euros annually and is still one of the fastest-growing industries, inextricably linked to hospitality and event management sectors that both benefit from and add to the experience of international tourism in both business and pleasure environments. 
+    Degree: Master of Arts (M.A.)
+    Duration: 3 semesters"
+
+  utter_master_study_mcs:
+    - text: "The consecutive Master's programme enables Bachelor's graduates in mechatronics and other related fields of study to deepen their knowledge and understanding of networked systems in digital production. 
+    Degree: Master of Engineering (M.Eng.)
+    Duration: 3 semesters"
+
+  utter_double_degree:
+    - text: "Sure! These are the double degree programs available for Bachelors: International Management, Business, International Management, Foreign Commerce, International Business, International Trade and Business Studies. 
+    You can check out this page for more information: https://www.th-deg.de/en/study-with-us/course-choices/double-degrees. Do you have any other question?"
+
+  utter_double_degree_australia:
+    - text: "University of the Sunshine Coast
+
+Double degree courses:
+
+B. A. International Management
+B. A. Business
+M. A. Strategic and International Management
+M. A. International Business"
+
+  utter_double_degree_brazil:
+    - text: "Universidade de Fortaleza
+
+Double degree courses:
+
+B. A. International Management
+B. A. Foreign Commerce
+M. A. Strategic and International Management
+M. A. Management (Mestrado em Administracao de Empresas)"
+
+  utter_double_degree_finland:
+    - text: "HAMK, Hämenlinna and Valkeakoski
+
+Double degree courses:
+
+B.A. International Management
+B.A. International Business
+ "
+
+  utter_double_degree_france:
+    - text: "IDRAC Business School Paris, Lyon
+
+Double degree courses:
+
+B.A. International Management
+B.A. International Business"
+
+  utter_double_degree_mexico:
+    - text: "Universidad de Colima
+
+Double degree courses:
+
+B.A. International Management
+B.A. International Trade (Comercio Exterior y Gestión Internacional)
+B.A. International Business (Negocios Internacionales y Gestión Internacional)"
+
+  utter_double_degree_new_zealand:
+    - text: "Eastern Institute of Technology, New Zealand
+
+Double degree courses:
+
+B.A. International Management
+B.A. of Business Studies"
+
+  utter_double_degree_austria:
+    - text: "IMC FH Krems
+
+Double degree courses:
+
+M.A. Strategic and International Management
+M.A. Business"
+
+  utter_double_degree_czech_republic:
+    - text: "Mendel University Brno/Brünn
+
+    Double degree courses:
+    
+    M.A. Strategic and International Management
+    M.Sc. European Studies in Economics and Management
+     
+    
+    University of West Bohemia, Plzen/Pilsen
+    
+    Double degree courses:
+    
+    M.Sc. Electrical Engineering and Information Technology
+    M.Eng. Electrical Engineering and Informatics"
+
+  utter_summer_school:
+    - text: "We offer summer schools for various topics here at the Deggendorf Institute of Technology."
+
+  utter_summer_school_info:
+    - text: "Summer schools are short block seminars between 1 and 4 weeks for bachelor, master, and doctoral students who are enrolled in a home university. 
+    They usually take place during summer breaks and are therefore an interesting alternative to a classic semester abroad."
+
+  utter_contact:
+    - text: "For any inquiries, you can write an email to welcome@th-deg.de or you can reach us at +4999136158228. 
+    For more information and online consultation sessions, you can check this page: https://www.th-deg.de/en/advice or our website:https://www.th-deg.de/en.Do you need assistance with anything else?"
+
+actions:
+  - action_admission_decisions
+  - action_event_dates
+  - action_uni_website
+  - action_language_courses
+  - action_available_courses
+  - action_career_service
+  - action_master_study
+  - action_bachelor_study
+  - action_summer_school
+  - action_asking_everything_ok
+  - action_holiday_schedules
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
